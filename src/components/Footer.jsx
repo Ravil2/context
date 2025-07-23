@@ -8,7 +8,8 @@ export default function Footer() {
 
         <div className="flex space-x-6">
           <a
-            href="#"
+            href="https://github.com/Ravil2"
+            target="_blank"
             className="text-white/50 hover:text-white transition-colors"
           >
             <svg

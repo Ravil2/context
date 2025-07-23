@@ -1,8 +1,10 @@
+import { Link } from 'react-router'
+
 export default function Home() {
   return (
     <div className="flex justify-between items-center min-h-[calc(100vh-10rem)] px-8 py-12">
       <div className="w-full md:w-1/2 flex flex-col gap-8">
-        <h1 className="bg-yellow-400 w-fit text-black font-bold text-4xl md:text-5xl px-3 py-1 rounded-sm transform hover:skew-x-3 transition-all duration-300">
+        <h1 className="bg-violet-400 w-fit text-black font-bold text-4xl md:text-5xl px-3 py-1 rounded-sm transform hover:skew-x-3 transition-all duration-300">
           useContext
         </h1>
 
@@ -12,8 +14,8 @@ export default function Home() {
           возможности контекста на реальных примерах.
         </p>
 
-        <button className="cursor-pointer bg-yellow-400 text-black font-medium px-6 py-3 rounded-md w-fit hover:bg-yellow-300 transition-colors duration-300 shadow-lg hover:shadow-yellow-400/30">
-          Перейти к статье →
+        <button className="cursor-pointer bg-violet-400 text-black font-medium px-6 py-3 rounded-md w-fit hover:bg-yellow-300 transition-colors duration-300 shadow-lg hover:shadow-yellow-400/30">
+          <Link to="/context-page">Перейти к статье →</Link>
         </button>
       </div>
 
@@ -24,7 +26,7 @@ export default function Home() {
             alt="React useContext illustration"
             className="w-full max-w-xl rounded-lg shadow-2xl border-2 border-white/10"
           />
-          <div className="absolute inset-0 bg-yellow-400/10 rounded-lg pointer-events-none"></div>
+          <div className="absolute inset-0 bg-violet-400/10 rounded-lg pointer-events-none"></div>
         </div>
       </div>
     </div>
