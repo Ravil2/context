@@ -9,11 +9,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/example" element={<Examples />} />
-        <Route path="/context-page" element={<ContextPage />} />
-      </Routes>
+      <main className="max-w-4xl mx-auto pt-20 pb-20 min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/examples" element={<Examples />} />
+          <Route path="/context-page" element={<ContextPage />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   )
